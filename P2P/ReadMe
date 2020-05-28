@@ -1,0 +1,21 @@
+Each eecslab-X folder contains a p2p folder need to upload to each eecslab (since each eecslab-X folder has different config_peer), and start each peer at for each eecslab.
+Already uploaded each folder on mxh805@eecslab-X.case.edu.
+
+My port range is from 52140 to 52159, (52000 + 20*7) to (52000 + 20*7 + 19)
+
+Divided shared files based the "file_index"
+
+Command List (Not case sensitive):
+Help
+Connect
+Get filename (e.g. Get 98-0.txt)
+Leave
+Exit
+
+Compile and run p2p.java, it will set up three ports, one for TCP connection, one for file transfer, and another one for UDP connection.
+After entering the user input, you could type each command or type help to get a list of commands.
+Try to type connect first with eecslab-10 first.
+After type get filename, if this file is exist in neighbors, the file holder will transfer the file to the obtained folder of host who request it.
+If this file does not exist, there will be no response to this file request query, and you could continue type in commands.
+
+Type Leave to close all connections on a host, or type exit to close all connections.
